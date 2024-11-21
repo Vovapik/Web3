@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: " Harrington", Harrington, fantasy;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.layout-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.layout-table td {
+    padding: 20px;
+    border: 2px solid #333;
+    vertical-align: top;
+}
+
+.header {
+    background-color: transparent;
+    color: #770ba3;
+    text-align: center;
+    height: 7%;
+}
+
+.header-box {
+    background-color: #020c33;
+    color: #770ba3;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+}
+
+.left-block {
+    background-color: transparent;
+    font-size: x-large;
+    color: #770ba3;
+    width: 20%;
+    height: 100%;
+}
+
+.main-block {
+    background-color: transparent;
+    color: #770ba3;
+    width: 50%;
+    font-size: x-large;
+}
+
+.right-block-1 {
+    background-color: transparent;
+    font-size: x-large;
+    color: #770ba3;
+    width: 30%;
+}
+
+.right-block-2 {
+    background-color: transparent;
+    font-size: x-large;
+    color: #770ba3;
+    width: 30%;
+}
+
+.footer {
+    background-color: transparent;
+    color: #770ba3;
+    text-align: center;
+    height: 14%;
+    position: relative;
+}
+
+.footer-box {
+    background-color: #020c33;
+    color: #770ba3;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}

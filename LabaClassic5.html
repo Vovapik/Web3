@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleHistoryClassic.css">
+    <title>TAROT</title>
+</head>
+<body>
+<div class="container">
+    <table class="layout-table">
+        <tr>
+            <td colspan="3" class="header">
+                <div class="header-box">
+                    <h1>Tarot</h1>
+                </div>
+                <h1>TRY AND PEEK INTO THE FUTURE</h1>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="left-block">
+                <h1>PORTAL</h1><br>
+                <ul>
+                    <li><a href="index.html">
+                        Main
+                    </a></li>
+                    <li><a href="LabaClassic2.html">
+                        History
+                    </a></li>
+                    <li><a href="LabaClassic3.html">
+                        Major Arcana
+                    </a></li>
+                    <li><a href="LabaClassic4.html">
+                        Minor Arcana
+                    </a></li>
+                    <li><a href="LabaGrid.html">
+                        Main Grid
+                    </a></li>
+                    <li><a href="LabaFlex.html">
+                        Main Flex
+                    </a></li>
+                </ul>
+                <br>
+                <img src="map.jpg" height="200" width="300" usemap="#image-map">
+                <map name="image-map">
+                    <area shape="rect" coords="0,0,300,90" href="LabaClassic2.html" alt="History of tarot">
+                    <area shape="rect" coords="0,90,130,200" href="LabaClassic3.html" alt="Major arcana">
+                    <area shape="rect" coords="130,90,300,200" href="LabaClassic4.html" alt="Minor arcana">
+                </map>
+            </td>
+            <td rowspan="2" class="main-block">
+                <img src="web.jpg" height="400" width="700">
+                <p>The web of fate</p>
+            </td>
+            <td class="right-block-1">Want to know the true reason of your problems? Want to get a powerful instrument, that will allow you to be one step ahead? Press the button below right now!
+                <br>
+                <button type="button" onclick="alert('Beep')">Do it! Now!</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="right-block-2">
+                <form>
+                <label for="feedback">Feedback:</label><br>
+                <input type="text" id="feedback" name="feedback" value=""><br>
+                </form>
+                <button type="button" onclick="alert('Thank you!')">Send</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                <div class="footer-box">
+                    <h1>Tarot</h1>
+                </div>
+                <h1>UNVEIL THE SECRETS OF FATE</h1>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

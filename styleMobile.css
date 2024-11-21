@@ -1,0 +1,70 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Harrington", Harrington, fantasy;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    color: #770ba3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-box, .footer-box {
+    background-color: #020c33;
+    color: #770ba3;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-block, .main-block, .right-block {
+    width: 100%;
+}
+
+.photos img {
+    max-width: 100%;
+    display: none;
+}
+
+.photos img:target {
+    display: block;
+}
+
+/* Mobile-Friendly Layout */
+@media (min-width: 768px) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    .left-block, .main-block, .right-block {
+        width: calc(33.333% - 40px);
+    }
+}
+
+.footer, .header {
+    background-color: transparent;
+}

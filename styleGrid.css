@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: " Harrington", Harrington, fantasy;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+}
+
+p a {
+    color: #770ba3;
+    text-decoration: none;
+}
+
+p a:visited {
+    color: #770ba3;
+}
+
+.photos img {
+    display: none;
+    max-width: 80%;
+    height: auto;
+}
+.photos img:nth-child(1):target,
+.photos img:nth-child(2):target,
+.photos img:nth-child(3):target,
+.photos img:nth-child(4):target,
+.photos img:nth-child(5):target {
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+                "header header header"
+                "left-block main-block right-block-1"
+                "left-block main-block right-block-2"
+                "left-block footer footer";
+    grid-template-columns: auto 45% auto;
+    grid-template-rows: auto auto auto auto;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: transparent;
+    color: #770ba3;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.header-box {
+    background-color: #020c33;
+    color: #770ba3;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    justify-self: start;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.left-block {
+    grid-area: left-block;
+    background-color: transparent;
+    color: #770ba3;
+    font-size: x-large;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.main-block {
+    grid-area: main-block;
+    background-color: transparent;
+    color: #770ba3;
+    font-size: x-large;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.right-block-1 {
+    grid-area: right-block-1;
+    background-color: transparent;
+    color: #770ba3;
+    font-size: x-large;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.right-block-2 {
+    grid-area: right-block-2;
+    background-color: transparent;
+    color: #770ba3;
+    font-size: x-large;
+    padding: 20px;
+    border: 2px solid #333;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: transparent;
+    color: #770ba3;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+
+.footer-box {
+    background-color: #020c33;
+    color: #770ba3;
+    padding: 5px 10px;
+    border: 2px solid #333;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
