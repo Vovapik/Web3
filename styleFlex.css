@@ -163,58 +163,72 @@ body, html {
 }
 /* Mobile-Friendly Layout */
 @media screen and (max-width: 900px) {
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    /* General adjustments for mobile */
+    body, html {
+        display: block; /* Switch from flex to block for better stacking */
     }
 
-    body {
-        font-family: "Harrington", Harrington, fantasy;
-        background-image: url("background.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        backdrop-filter: blur(3px);
-        color: #770ba3;
+    .main-header-container {
+        flex-direction: column; /* Ensure elements stack vertically */
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header, footer {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .header-box, .footer-box {
-        background-color: transparent;
-        color: #770ba3;
+    .header {
         padding: 10px;
-        display: inline-block;
+        text-align: center;
+    }
+
+    .header-box {
+        position: static; /* Make the header-box inline instead of absolute */
+        transform: none; /* Remove transform */
         margin-bottom: 10px;
     }
 
-    main {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        padding: 20px;
+    .main-container {
+        flex-direction: column; /* Stack left, center, and right blocks vertically */
     }
 
-    .left-block, .main-block, .right-block {
-        width: calc(33.333% - 40px);
+    .left-block,
+    .center-block,
+    .right-block {
+        width: 100%; /* Make all blocks full-width */
+        padding: 10px; /* Reduce padding for better fit */
+    }
+
+    .left-block img {
+        width: 100%; /* Ensure images in the left block scale properly */
+        height: auto;
     }
 
     .photos img {
-        max-width: 100%;
-        display: none;
+        max-width: 100%; /* Adjust photo size for smaller screens */
+        height: auto;
     }
 
-    .photos img:target {
-        display: block;
+    .right-container {
+        flex-direction: column; /* Stack right-block sections vertically */
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-box {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    /* Typography adjustments */
+    h1, h2 {
+        font-size: 1.5em; /* Reduce heading size for smaller screens */
+    }
+
+    ul {
+        margin-left: 10px; /* Reduce indents for lists */
+    }
+
+    p, li {
+        font-size: 1em; /* Adjust text size for readability */
     }
 }
